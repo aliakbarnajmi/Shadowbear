@@ -38,6 +38,7 @@ GEOLITE_CITY_PATH = f"{TEMP_PATH}/GeoLite2-City.mmdb"
 GEOLITE_COUNTRY_PATH = f"{TEMP_PATH}/GeoLite2-Country.mmdb"
 GEOLITE_ASN_PATH = f"{TEMP_PATH}/GeoLite2-ASN.mmdb"
 IRAN_ASN_PATH = f"{TEMP_PATH}/IranASN.mmdb"
+SPEEDTEST_LOG_PATH = f"{TEMP_PATH}/speedtest.log"
 
 RAW_CONFIGS_PATH = "subs/raw"
 RAW_CONFIGS_PROVIDER_PATH = f"{RAW_CONFIGS_PATH}/providers"
@@ -655,6 +656,8 @@ def ping_all_configs():
         print(f"all configs = {len(all_configs)}")
         if os.path.isfile(JOSN_OUTPUT_PATH):
             os.remove(JOSN_OUTPUT_PATH)
+        if os.path.isfile(SPEEDTEST_LOG_PATH):
+            os.remove(SPEEDTEST_LOG_PATH)
         start_chuck_time = time.time()
         temp_configs = []
         if len(all_configs) > CHUNK_SIZE:
@@ -673,10 +676,9 @@ def ping_all_configs():
         
         # run_command
         if is_windows:
-            # run_command(f".\\{exe_file} --config .\\utils\\ping_config.json --test {config_temp_path} > .\\{TEMP_PATH}\\speedtest.log 2>&1 &")
-            cmd = f'.\\\\{exe_file} --config utils/ping_config.json --test {TEMP_PATH}/temp.txt > {TEMP_PATH}/speedtest.log 2>&1 &'
+            cmd = f'.\\\\{exe_file} --config utils/ping_config.json --test {TEMP_PATH}/temp.txt > {SPEEDTEST_LOG_PATH} 2>&1 &'
         else:
-            cmd = f"./{exec_file} --config utils/ping_config.json --test {config_temp_path} > {TEMP_PATH}/speedtest.log 2>&1 &"
+            cmd = f"./{exec_file} --config utils/ping_config.json --test {config_temp_path} > {SPEEDTEST_LOG_PATH} 2>&1 &"
         
         with open(PING_TEST_PATH, "w") as f:
             f.write(cmd)
@@ -694,10 +696,12 @@ def ping_all_configs():
                 max_run = 2
         
         # wait for output.json file exists and process ends
-        while not os.path.isfile(JOSN_OUTPUT_PATH) and not is_speedtest_ended(f"{TEMP_PATH}/speedtest.log"):
+        while not os.path.isfile(JOSN_OUTPUT_PATH):
             print(f'waiting for ping test to comaplete, run: {counter} of {batch_run}\telapsed_time: {int((time.time() - start_total)/60)} min')
             time.sleep(10)
             if time.time() - start_chuck_time > CHUNK_TIMEOUT:
+                break
+            if is_speedtest_ended(SPEEDTEST_LOG_PATH):
                 break
             # if process.poll() is not None:
             #     break
