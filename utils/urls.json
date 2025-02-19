@@ -1,0 +1,218 @@
+{"subs":
+    [
+        {
+            "name": "ainita",
+            "type": "mixed",
+            "url": [
+                "https://ainita.s3.eu-north-1.amazonaws.com/AinitaServer-1.csv",
+                "https://ainita.s3.eu-north-1.amazonaws.com/AinitaServer-2.csv",
+                "https://ainita.s3.eu-north-1.amazonaws.com/AinitaServer-3.csv",
+                "https://ainita.s3.eu-north-1.amazonaws.com/AinitaServer-4.csv"        
+        ]
+        },
+        {
+            "name": "soroushmirzaei",
+            "type": "base64",
+            "url": [
+                "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/refs/heads/main/protocols/shadowsocks",
+                "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/shadowsocks"
+        ]
+        },
+        {
+            "name": "proxypool",
+            "type": "json",
+            "url": [
+                "https://proxypool.link/ss/sub"       
+        ]
+        },
+        {
+            "name": "coldwater",
+            "type": "base64",
+            "url": [
+                "https://raw.githubusercontent.com/coldwater-10/V2ray-Config/main/Splitted-By-Protocol/ss.txt"       
+        ]
+        },
+        {
+            "name": "openproxylist",
+            "type": "mixed",
+            "url": [
+                "https://raw.githubusercontent.com/roosterkid/openproxylist/refs/heads/main/V2RAY_RAW.txt"
+        ]
+        },
+        {
+            "name": "mahdiv2ray",
+            "type": "mixed",
+            "url": [
+                "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/refs/heads/master/sub/splitted/ss.txt"
+        ]
+        },
+        {
+            "name": "NiREvil",
+            "type": "mixed",
+            "url": [
+                "https://raw.githubusercontent.com/NiREvil/vless/main/sub/SSTime"
+        ]
+        },
+        {
+            "name": "barry-far",
+            "type": "base64",
+            "url": [
+                "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Splitted-By-Protocol/ss.txt"
+        ]
+        },
+        {
+            "name": "peasoft",
+            "type": "base64",
+            "url": [
+                "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
+        ]
+        },
+        {
+            "name": "YasserDivaR",
+            "type": "mixed",
+            "url": [
+                "https://raw.githubusercontent.com/YasserDivaR/pr0xy/main/ShadowSocks2021.txt"
+        ]
+        },
+        {
+            "name": "ermaozi",
+            "type": "mixed",
+            "url": [
+                "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt"
+        ]
+        },
+        {
+            "name": "w1770946466",
+            "type": "base64",
+            "url": [
+                "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num"
+        ]
+        },
+        {
+            "name": "w1770946466",
+            "type": "base64",
+            "url": [
+                "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num"
+        ]
+        },
+        {
+            "name": "mheidari98",
+            "type": "base64",
+            "url": [
+                "https://raw.githubusercontent.com/mheidari98/.proxy/main/ss"
+        ]
+        },
+        {
+            "name": "AB-841",
+            "type": "mixed",
+            "url": [
+                "https://raw.githubusercontent.com/AB-841/SHADOWCOCKS-By-AB_841/refs/heads/main/shadowcocks-by-ab_841"
+        ]
+        },
+        {
+            "name": "ssrsub",
+            "type": "base64",
+            "url": [
+                "https://raw.githubusercontent.com/ssrsub/ssr/master/ss-sub#ss-sub"
+        ]
+        },
+        {
+            "name": "birdxray",
+            "type": "mixed",
+            "url": [
+                "https://raw.githubusercontent.com/birdxray/birdxray/refs/heads/main/Tel%20%3A%20(%40Bird_Xray%F0%9F%90%A6)%20ShadowSocks%20!"
+        ]
+        },
+        {
+            "name": "MhdiTaheri",
+            "type": "base64",
+            "url": [
+                "https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector/main/sub/ssbase64"
+        ]
+        },
+        {
+            "name": "MrMohebi",
+            "type": "mixed",
+            "url": [
+                "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/all.txt"
+        ]
+        },
+        {
+            "name": "JieErJingFu",
+            "type": "base64",
+            "url": [
+                "https://raw.githubusercontent.com/JieErJingFu/FreeNodesV2RayorTrojan_20210113-/main/EncryptedFreeNodes.txt"
+        ]
+        },
+        {
+            "name": "lflflf999",
+            "type": "base64",
+            "url": [
+                "https://raw.githubusercontent.com/lflflf999/0516/main/BX-JD"
+        ]
+        },
+        {
+            "name": "Epodonios",
+            "type": "base64",
+            "url": [
+                "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/ss.txt"
+        ]
+        },
+        {
+            "name": "mermeroo",
+            "type": "base64",
+            "url": [
+                "https://raw.githubusercontent.com/mermeroo/Loon/refs/heads/main/all.nodes.txt"
+        ]
+        },
+        {
+            "name": "theGreatPeter",
+            "type": "mixed",
+            "url": [
+                "https://raw.githubusercontent.com/theGreatPeter/v2rayNodes/main/nodes.txt"
+        ]
+        },
+        {
+            "name": "Ashkan-m",
+            "type": "mixed",
+            "url": [
+                "https://raw.githubusercontent.com/Ashkan-m/v2ray/main/Sub.txt"
+        ]
+        },
+        {
+            "name": "shadowmere",
+            "type": "base64",
+            "url": [
+                "https://shadowmere.xyz/api/b64sub/"
+        ]
+        },
+        {
+            "name": "Arista",
+            "type": "mixed",
+            "url": [
+                "https://raw.githubusercontent.com/Aristaproject/AristaSub/refs/heads/main/Arista1.txt",
+                "https://raw.githubusercontent.com/Aristaproject/AristaSub/refs/heads/main/Arista2.txt",
+                "https://raw.githubusercontent.com/Aristaproject/AristaSub/refs/heads/main/Arista3.txt",
+                "https://raw.githubusercontent.com/Aristaproject/AristaSub/refs/heads/main/Arista4.txt",
+                "https://raw.githubusercontent.com/Aristaproject/AristaSub/refs/heads/main/Arista5.txt",
+                "https://raw.githubusercontent.com/Aristaproject/AristaSub/refs/heads/main/Arista6.txt",
+                "https://raw.githubusercontent.com/Aristaproject/AristaSub/refs/heads/main/Arista7.txt",
+                "https://raw.githubusercontent.com/Aristaproject/AristaSub/refs/heads/main/Arista8.txt"
+        ]
+        },
+        {
+            "name": "Rayan-Telegram",
+            "type": "mixed",
+            "url": [
+                "https://raw.githubusercontent.com/Rayan-Config/C-Sub/refs/heads/main/configs/proxy.txt"
+        ]
+        },
+        {
+            "name": "4n0nymou3",
+            "type": "mixed",
+            "url": [
+                "https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt"
+        ]
+        }
+    ]
+}
