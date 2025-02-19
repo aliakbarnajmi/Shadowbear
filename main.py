@@ -649,6 +649,7 @@ def ping_all_configs():
     CHUNK_SIZE = 100
     CHUNK_TIMEOUT = 150     # sec
     counter = 1
+    _counter = 1
     start_total = time.time()
     batch_run = 0
     print(f"Start Testing {len(all_configs)} configs")
@@ -667,8 +668,7 @@ def ping_all_configs():
         else:
             temp_configs = all_configs.copy()
             all_configs = []
-            
-
+        _counter += 1
         with open(config_temp_path, "w", encoding="utf-8-sig") as f:
             for item in temp_configs:
                 f.write(item)
@@ -736,7 +736,7 @@ def ping_all_configs():
             for item in temp_configs:
                 all_configs.append(item)
                     
-        if counter > max_run:
+        if _counter > max_run:
             break
         
         time.sleep(2)
