@@ -586,6 +586,17 @@ def kill_pid(pid):
     else:
         return True
 
+def is_speedtest_ended(log_path):
+    if os.path.isfile(log_path):
+        with open(log_path, "r") as f:
+            data = f.readlines()
+        try:
+            if json.loads(data[-1].split()[-1]).get("id") == -1:
+                return True
+        except:
+            pass
+    return False
+        
 def ping_all_configs():
     is_windows = True if os.sys.platform.lower()=='win32' else False
     if is_windows:
@@ -630,7 +641,7 @@ def ping_all_configs():
             os.remove(_file_path)
 
     with open(f"{RAW_CONFIGS_PATH}/all.txt", encoding="utf-8-sig") as f:
-    # with open(f"{RAW_CONFIGS_PROVIDER_PATH}/all.txt", encoding="utf-8-sig") as f:
+    # with open(f"{RAW_CONFIGS_PROVIDER_PATH}/ainita.txt", encoding="utf-8-sig") as f:
         all_configs = f.readlines()
         all_configs = [item.strip() for item in all_configs]    
 
@@ -638,6 +649,7 @@ def ping_all_configs():
     CHUNK_TIMEOUT = 150     # sec
     counter = 1
     start_total = time.time()
+    batch_run = 0
     print(f"Start Testing {len(all_configs)} configs")
     while len(all_configs) > 0:
         print(f"all configs = {len(all_configs)}")
@@ -673,11 +685,12 @@ def ping_all_configs():
         process.wait()
         pid = process.pid
         
-        batch_run = ceil(len(all_configs)/CHUNK_SIZE)
-        max_run = batch_run + 10
+        if batch_run == 0:
+            batch_run = ceil(len(all_configs)/CHUNK_SIZE)
+            max_run = batch_run + 10
         
         # wait for output.json file exists and process ends
-        while not os.path.isfile(JOSN_OUTPUT_PATH):
+        while not os.path.isfile(JOSN_OUTPUT_PATH) and not is_speedtest_ended(f"{TEMP_PATH}/speedtest.log"):
             print(f'waiting for ping test to comaplete, run: {counter} of {batch_run}\telapsed_time: {int((time.time() - start_total)/60)} min')
             time.sleep(10)
             if time.time() - start_chuck_time > CHUNK_TIMEOUT:
@@ -838,9 +851,9 @@ def check_host():
 
 if __name__ == "__main__":
     setup_env()
-    save_all_configs()
-    merge_all_configs()
-    split_raw_by_country()
+    # save_all_configs()
+    # merge_all_configs()
+    # split_raw_by_country()
     ping_all_configs()
     split_active_by_country()
     # check_host_country("AM")
