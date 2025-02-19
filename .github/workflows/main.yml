@@ -1,0 +1,29 @@
+name: Collect
+
+on:
+  schedule:
+    # - cron: '* */4 * * *'
+    # https://crontab.guru/
+    - cron: "0 6 * * *"
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v4.7.0
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - name: Install Requirements
+        run: |
+          pip install -r ./requirements.txt
+      - name: Running Collector
+        run: python main.py
+      #- name: Ping Configs
+      #  run: |
+      #    sleep 5
+      #    # sudo sh ./utils/ping_test.sh
+      #    # python ./utils/ping_output.py
+      - uses: stefanzweifel/git-auto-commit-action@v5
