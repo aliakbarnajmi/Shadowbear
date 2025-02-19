@@ -686,8 +686,12 @@ def ping_all_configs():
         pid = process.pid
         
         if batch_run == 0:
-            batch_run = ceil(len(all_configs)/CHUNK_SIZE)
-            max_run = batch_run + 10
+            if CHUNK_SIZE < len(all_configs):
+                batch_run = ceil(len(all_configs)/CHUNK_SIZE)
+                max_run = batch_run * 2
+            else:
+                batch_run = 1
+                max_run = 2
         
         # wait for output.json file exists and process ends
         while not os.path.isfile(JOSN_OUTPUT_PATH) and not is_speedtest_ended(f"{TEMP_PATH}/speedtest.log"):
