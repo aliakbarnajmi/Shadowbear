@@ -1,0 +1,17 @@
+.gitattributes
+output.json
+lite-linux-amd64
+venv/
+utils/GeoLite2-City.mmdb
+lite_config.json
+lite-linux-amd64.gz
+speedtest.log
+ping_config.json
+speed_configs.json
+temp.txt
+*.mmdb
+lite-windows-amd64.exe
+lite-windows-amd64-v0.15.0.zip
+temp/
+__pycache__/
+
