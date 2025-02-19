@@ -673,7 +673,8 @@ def ping_all_configs():
             for item in temp_configs:
                 f.write(item)
                 f.write("\n")
-        
+        if counter > 20:
+		break
         # run_command
         if is_windows:
             cmd = f'.\\\\{exe_file} --config utils/ping_config.json --test {TEMP_PATH}/temp.txt > {SPEEDTEST_LOG_PATH} 2>&1 &'
