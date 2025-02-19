@@ -1,0 +1,8 @@
+{
+    "group": "gname2",
+    "speedtestMode":"pingonly",
+    "concurrency":10,
+    "generatePicMode": 3,
+    "language":"en",
+    "timeout":10
+}
