@@ -654,8 +654,6 @@ def ping_all_configs():
     batch_run = 0
     print(f"Start Testing {len(all_configs)} configs")
     while len(all_configs) > 0:
-        if counter > 20:
-            break
         print(f"all configs = {len(all_configs)}")
         if os.path.isfile(JOSN_OUTPUT_PATH):
             os.remove(JOSN_OUTPUT_PATH)
