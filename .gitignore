@@ -13,5 +13,6 @@ temp.txt
 lite-windows-amd64.exe
 lite-windows-amd64-v0.15.0.zip
 temp/
+ping_test.sh
 __pycache__/
 
