@@ -1,0 +1,6 @@
+﻿ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@37.235.49.152:989#🇮🇸 IS Hafnarfjordur
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOakJsWkRsaw@is3.opensocks.site:8388#🇮🇸 IS Hafnarfjordur
+ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@37.235.49.152:989#🇮🇸 IS Hafnarfjordur
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZMkUyWlRVMg@89.221.224.94:8388#🇮🇸 IS Hafnarfjordur
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZMkUyWlRVMg@89.221.224.94:1443#🇮🇸 IS Hafnarfjordur
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZMkUyWlRVMg==@89.221.224.94:1443#🇮🇸 IS Hafnarfjordur

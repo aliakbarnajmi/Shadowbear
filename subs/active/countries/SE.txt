@@ -1,3 +1,5 @@
-﻿ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHemhWQ3VBaU9BbXlmSEM2S2VzSEJM@194.54.164.71:15780#🇸🇪 SE Falkenberg
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVRGNqWVE2WjZBSVd4VmlacHF5T21P@46.246.98.155:44013#🇸🇪 SE Stockholm
+﻿ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVRGNqWVE2WjZBSVd4VmlacHF5T21P@46.246.98.155:44013#🇸🇪 SE Stockholm
+ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@121.127.46.147:989#🇸🇪 SE Stockholm
+ss://YWVzLTI1Ni1nY206Q3ltQ2Q0QUJONWFCTUoyWA@sto5.vpntype.dev:8388#🇸🇪 SE Stockholm
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiQ3o4Vmt2SG9VSGRqdlFsZUpGVjlB@46.246.49.166:43785#🇸🇪 SE Falkenberg
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpablU4eU9ZNEF6VjNmUjNFN2lOQm00@46.246.45.226:7584#🇸🇪 SE Falkenberg
