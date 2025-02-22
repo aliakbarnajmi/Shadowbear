@@ -1,37 +1,43 @@
-﻿ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj@series-a2-mec.varzesh360.co:443#🇬🇧 GB London
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozVG5RZGdtMm1WSlFidVNDWG1SNVZj@81.19.141.45:443#🇩🇪 DE Frankfurt am Main
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKSWhONnJCS2thRWJvTE5YVlN2NXJx@142.4.216.225:80#🇨🇦 CA None
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.164:8080#🇱🇹 LT None
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.192:8080#🇱🇹 LT None
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR@series-a2-me.varzesh360.co:443#🇧🇭 BH None
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpNMlkyT1RSaQ==@89.221.224.93:8388#🇮🇸 IS Hafnarfjordur
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHdjJyS3lhYllDTHVuVTkzZ01jd2dC@h110vpnch.outlinekeys.net:4248#🇨🇭 CH Zurich
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.181:8080#🇱🇹 LT None
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4aUM4OEhUVGs2Y0ZYTXBPeVB6cWZQ@77.83.246.74:443#🇵🇱 PL Mazovia
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj@api.namasha.co:443#🇺🇸 US Ashburn
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyYWZiYzk3NDAwY2E3MWM4ZjMzMDZmOTg0M2E2ZTFjMg==@216.250.97.118:443#🇭🇰 HK Hong Kong
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1ZzRGdTc5U0VSRWRGR2x0MnNVeVQ0@95.164.9.144:2927#🇦🇹 AT Vienna
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6SWFhcjF4dzZKQzF2Q1dJWjhwQVZS@13.60.94.54:12916#🇸🇪 SE Stockholm
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5b1hvaTBVS1cxcEVDdjlQVHpFdXNo@150.241.101.222:25543#🇩🇪 DE Frankfurt am Main
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@beesyar.org:8080#🇱🇹 LT None
+﻿ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyYWZiYzk3NDAwY2E3MWM4ZjMzMDZmOTg0M2E2ZTFjMg@2.58.241.42:443#🇹🇼 TW Taichung
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp4OUNMbXZ0U3RuVUlUb3ZYQkNseGh1@46.246.38.98:54590#🇸🇪 SE Falkenberg
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.166:8080#🇱🇹 LT None
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3MFh3ZzBTYkhTTDhDdUNraUx1R2hP@46.246.30.146:15128#🇸🇪 SE Stockholm
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTowNWY4M2U3My0yMTEzLTQ5ZjItYTQ4ZC1kNzU4YmU5MWE0OWI@147.45.49.219:30443#🇯🇵 JP Tokyo
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.158.171.141:8080#🇫🇷 FR None
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.171:8080#🇱🇹 LT None
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.178:8080#🇱🇹 LT None
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.158.171.132:8080#🇫🇷 FR None
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR@admin.c3.webramz.co:443#🇧🇭 BH None
-ss://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.102.107:80?allowInsecure=0&sni=edge.validbv3528.ir&type=ws&host=edge.validbv3528.ir&path=/fp=chromefp=chrome#🇺🇸 US None
-ss://055177-9Tnzvv73dmnPvv70f77-9z71777-977-92b3vv73vv71_Ou-_ve-_vV4=@3.11.166.55:22222#🇬🇧 GB London
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj@api.namasha.co:443#🇺🇸 US Ashburn
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR@series-a2-me.varzesh360.co:443#🇧🇭 BH None
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp4OUNMbXZ0U3RuVUlUb3ZYQkNseGh1@46.246.46.205:54590#🇸🇪 SE Falkenberg
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHemhWQ3VBaU9BbXlmSEM2S2VzSEJM@194.54.164.71:15780#🇸🇪 SE Falkenberg
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyYWZiYzk3NDAwY2E3MWM4ZjMzMDZmOTg0M2E2ZTFjMg==@43.202.96.177:443#🇰🇷 KR Incheon
+ss://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.102.107:80?allowInsecure=0&sni=edge.validbv3528.ir&type=ws&host=edge.validbv3528.ir&path=/fp=chromefp=chrome#🇺🇸 US None
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.171:8080#🇱🇹 LT None
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4ZmNmNjRjNC0yYWM1LTRmMmYtODI5OC01MDUyZDhjZmY4MjY=@shadow-de01.gproxy.gratis:8388#🇩🇪 DE Nuremberg
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj@series-a2-mec.samanehha.co:443#🇬🇧 GB London
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyYWZiYzk3NDAwY2E3MWM4ZjMzMDZmOTg0M2E2ZTFjMg==@216.250.97.118:443#🇭🇰 HK Hong Kong
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@beesyar.org:8080#🇱🇹 LT None
+ss://4d0466d9-90b0-4f95-aef9-ca1c35b31c43@85.237.211.219:80/?type=ws&encryption=none&path=/vless/#🇦🇪 AE Dubai
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1UVM1bnRWcUMwMHNTS2tlTnpVaUQz@89.23.103.125:42090#🇳🇱 NL North Holland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1ZzRGdTc5U0VSRWRGR2x0MnNVeVQ0@95.164.9.144:2927#🇦🇹 AT Vienna
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.164:8080#🇱🇹 LT None
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKSWhONnJCS2thRWJvTE5YVlN2NXJx@142.4.216.225:80#🇨🇦 CA None
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.178:8080#🇱🇹 LT None
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpNMlkyT1RSaQ==@89.221.224.93:8388#🇮🇸 IS Hafnarfjordur
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUG05S0dsc0dXc2kxVTdUVEtmeHJu@moz.moz-dozd.monster:23818/?outline=1#🇩🇪 DE Frankfurt am Main
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3MFh3ZzBTYkhTTDhDdUNraUx1R2hP@46.246.30.146:15128#🇸🇪 SE Stockholm
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.158.171.151:8080#🇫🇷 FR None
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.157:8080#🇱🇹 LT None
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.199:8080#🇱🇹 LT None
-ss://4d0466d9-90b0-4f95-aef9-ca1c35b31c43@85.237.211.219:80/?type=ws&encryption=none&path=/vless/#🇦🇪 AE Dubai
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyYWZiYzk3NDAwY2E3MWM4ZjMzMDZmOTg0M2E2ZTFjMg@2.58.241.42:443#🇹🇼 TW Taichung
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.154:8080#🇱🇹 LT None
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1UVM1bnRWcUMwMHNTS2tlTnpVaUQz@89.23.103.125:42090#🇳🇱 NL North Holland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj@series-a2-mec.samanehha.co:443#🇬🇧 GB London
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjM0@54.248.54.190:1234#🇯🇵 JP Tokyo
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4aUM4OEhUVGs2Y0ZYTXBPeVB6cWZQ@77.83.246.74:443#🇵🇱 PL Mazovia
+ss://1d86846c-5a27-43c8-8981-57bb75c82195@185.153.183.129:3237/?type=tcp&channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-encryption=none#🇨🇾 CY None
+ss://055177-9Tnzvv73dmnPvv70f77-9z71777-977-92b3vv73vv71_Ou-_ve-_vV4=@3.11.166.55:22222#🇬🇧 GB London
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozVG5RZGdtMm1WSlFidVNDWG1SNVZj@81.19.141.45:443#🇩🇪 DE Frankfurt am Main
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyVXJTZmZlTkFCWEdYWGZOaG9MNnhCVW5oMVJ6cU1penJRMnM5UWZDMzhQMllQdVlQUlRxVzV6Wmc2akdpc2lOaGt6TTRTUmpGNm56dkZiMThHUHRFU1dvWFdqaHF5Qzg=@198.105.123.190:46902#🇬🇧 GB None
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.192:8080#🇱🇹 LT None
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.154:8080#🇱🇹 LT None
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.199:8080#🇱🇹 LT None
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHemhWQ3VBaU9BbXlmSEM2S2VzSEJM@194.54.164.71:15780#🇸🇪 SE Falkenberg
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHdjJyS3lhYllDTHVuVTkzZ01jd2dC@h110vpnch.outlinekeys.net:4248#🇨🇭 CH Zurich
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5b1hvaTBVS1cxcEVDdjlQVHpFdXNo@150.241.101.222:25543#🇩🇪 DE Frankfurt am Main
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6SWFhcjF4dzZKQzF2Q1dJWjhwQVZS@13.60.94.54:12916#🇸🇪 SE Stockholm
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyYWZiYzk3NDAwY2E3MWM4ZjMzMDZmOTg0M2E2ZTFjMg==@43.202.96.177:443#🇰🇷 KR Incheon
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR@admin.c3.webramz.co:443#🇧🇭 BH None
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.181:8080#🇱🇹 LT None
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj@series-a2-mec.varzesh360.co:443#🇬🇧 GB London
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.158.171.132:8080#🇫🇷 FR None

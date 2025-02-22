@@ -1,3 +1,2 @@
-﻿ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA@112.213.102.228:4231#🇭🇰 HK None
-ss://Y2hhY2hhMjAtaWV0Zjphc2QxMjM0NTY@103.149.183.10:8388#🇭🇰 HK None
-ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@112.213.102.228:4231#🇭🇰 HK None
+﻿ss://Y2hhY2hhMjAtaWV0Zjphc2QxMjM0NTY@103.149.183.10:8388#🇭🇰 HK None
+ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA@112.213.102.228:4231#🇭🇰 HK None
