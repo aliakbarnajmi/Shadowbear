@@ -689,8 +689,8 @@ def ping_all_configs():
             _file_path = os.path.join(temp_result_path, _file)
             os.remove(_file_path)
 
-    # with open(f"{RAW_CONFIGS_PATH}/all.txt", encoding="utf-8-sig") as f:
-    with open(f"{RAW_CONFIGS_PROVIDER_PATH}/ainita.txt", encoding="utf-8-sig") as f:
+    with open(f"{RAW_CONFIGS_PATH}/all.txt", encoding="utf-8-sig") as f:
+    # with open(f"{RAW_CONFIGS_PROVIDER_PATH}/ainita.txt", encoding="utf-8-sig") as f:
         _all_configs = f.readlines()
         all_configs = [item.strip() for item in _all_configs]
 
