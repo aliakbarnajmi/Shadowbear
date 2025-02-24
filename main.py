@@ -16,10 +16,11 @@ from zipfile import ZipFile
 from urllib.request import urlopen
 import re
 from urllib.parse import unquote
-from check_host import ping_multiple_ips, ping_part
+# from check_host import ping_multiple_ips, ping_part
 import random
 import pandas as pd
 from math import ceil
+import numpy as np
 
 try:
     from tqdm import tqdm
@@ -55,6 +56,8 @@ CHECKHOST_CONFIGS_RESULT_PATH = f"{CHECKHOST_CONFIGS_PATH}/results"
 
 JOSN_OUTPUT_PATH = "output.json"
 NOW = datetime.now().strftime("%Y.%m.%d-%H.%M.%S")
+NOW_TSTAMP = int(time.time())
+MAX_ALLOWABLE_ZERO_PING = 3
 
 # ---------------           Setup           ------------------
 
@@ -105,9 +108,9 @@ def find_asn():
             
 
     ip_address = getIP()
-    asn == "Unkown"
+    asn = "Unkown"
     if ip_address.replace(".", "").isdigit():
-        asn = find_asn_from_ip()
+        asn = find_asn_from_ip(ip_address)
         if asn == "Unkown":
             asn = find_asn_iran_from_ip(ip_address)
     
@@ -158,6 +161,10 @@ def setup_env():
         with open(PING_TEST_PATH, "w") as f:
             f.write("test")
         os.chmod(PING_TEST_PATH, 0o775)
+
+    if not os.path.isfile(f"{ACTIVE_CONFIGS_RESULT_PATH}/all.json"):
+        with open(f"{ACTIVE_CONFIGS_RESULT_PATH}/all.json", "w")  as f:
+            f.write("{}")
 
     # if not os.path.isdir("subs/results"):
     #     os.mkdir("subs/results")
@@ -426,7 +433,7 @@ def convert_to_mixed(text, typ):
 
     for item in _confs:
         # try:
-            item = item.strip().replace("`", "").replace("/?POST%20", "")
+            item = item.strip().replace("`", "").replace("/?POST%20", "").replace("/?outline=1", "")
             if not item.startswith("ss://"):
                 continue
             if item.startswith("ss://ey"):
@@ -597,8 +604,49 @@ def is_speedtest_ended(log_path):
         except:
             pass
     return False
-        
+
+def error_in_speedtest(log_path):
+    if os.path.isfile(log_path):
+        with open(log_path, "r") as f:
+            data = f.readlines()
+        try:
+            if "illegal base64" in data[-1].strip():
+                return True
+        except:
+            pass
+    return False
+
+all_ping_results = {}
+def check_last_results(conf):
+    global all_ping_results
+    if all_ping_results == {}:
+        with open(f"{ACTIVE_CONFIGS_RESULT_PATH}/all.json", encoding="utf-8-sig")  as f:
+            all_ping_results = json.loads(f.read())
+    data = all_ping_results.get(conf)
+    if data:
+        pings = data["Ping"]
+        if len(pings) > 2:
+            if pings[-3:] == [0, 0, 0]:
+                return False
+    else:
+        all_ping_results[conf] = {"DateTime": [NOW], "Ping":[0]}
+    if all_ping_results[conf]["DateTime"][-1] != NOW:
+        all_ping_results[conf]["DateTime"].append(NOW)
+        all_ping_results[conf]["Ping"].append(0)
+    return True
+
+def unique_json_output(js):
+    unique_js = {"nodes": []}
+    unique_links = []
+    for item in js["nodes"]:
+        conf = item['link']
+        if conf not in unique_links:
+            unique_links.append(conf)
+            unique_js['nodes'].append(item)
+    return unique_js
+     
 def ping_all_configs():
+    global all_ping_results
     is_windows = True if os.sys.platform.lower()=='win32' else False
     if is_windows:
         zip_file = f".\\{TEMP_PATH}\\lite-windows-amd64-v0.15.0.zip"
@@ -641,40 +689,63 @@ def ping_all_configs():
             _file_path = os.path.join(temp_result_path, _file)
             os.remove(_file_path)
 
-    with open(f"{RAW_CONFIGS_PATH}/all.txt", encoding="utf-8-sig") as f:
-    # with open(f"{RAW_CONFIGS_PROVIDER_PATH}/ainita.txt", encoding="utf-8-sig") as f:
-        all_configs = f.readlines()
-        all_configs = [item.strip() for item in all_configs]    
+    # with open(f"{RAW_CONFIGS_PATH}/all.txt", encoding="utf-8-sig") as f:
+    with open(f"{RAW_CONFIGS_PROVIDER_PATH}/ainita.txt", encoding="utf-8-sig") as f:
+        _all_configs = f.readlines()
+        all_configs = [item.strip() for item in _all_configs]
 
     CHUNK_SIZE = 100
-    CHUNK_TIMEOUT = 150     # sec
+    CHUNK_TIMEOUT = 100     # sec
+    if CHUNK_SIZE < len(all_configs):
+        batch_run = ceil(len(all_configs)/CHUNK_SIZE)
+        max_run = batch_run * 2
+    else:
+        batch_run = 1
+        max_run = 2
     counter = 1
-    _counter = 1
+    _counter = 0
     start_total = time.time()
-    batch_run = 0
     print(f"Start Testing {len(all_configs)} configs")
     while len(all_configs) > 0:
-        # if counter > 20:
-        #     break
-        print(f"all configs = {len(all_configs)}")
+        print(f"remain configs = {len(all_configs)}")
         if os.path.isfile(JOSN_OUTPUT_PATH):
             os.remove(JOSN_OUTPUT_PATH)
         if os.path.isfile(SPEEDTEST_LOG_PATH):
             os.remove(SPEEDTEST_LOG_PATH)
         start_chuck_time = time.time()
         temp_configs = []
-        if len(all_configs) > CHUNK_SIZE:
-            for i in range(CHUNK_SIZE):
-                temp_configs.append(all_configs.pop(random.randint(0, len(all_configs) - 1)))
-            # temp_configs = all_configs[0:CHUNK_SIZE].copy()
-        else:
-            temp_configs = all_configs.copy()
-            all_configs = []
-        _counter += 1
+        if len(all_configs) < CHUNK_SIZE:
+            CHUNK_SIZE = len(all_configs)
+        for i in range(CHUNK_SIZE):
+            conf = all_configs.pop(random.randint(0, len(all_configs) - 1))
+            if check_last_results(conf):
+                temp_configs.append(conf.replace(" ", "_"))
+        _counter += 1        
+        
+        duplicated_config_for_test = False
         with open(config_temp_path, "w", encoding="utf-8-sig") as f:
+            # there is a ridiculous bug in litespeedtest, when number of config is less than 15 configs it's crash
+            # so if we want to test less than 15, must duplicate configs
+            min_configs = 25
+            if len(temp_configs) < 25:
+                duplicated_config_for_test = True
+                while(len(temp_configs) < 25):
+                    temp_configs.append(temp_configs[random.randint(0, len(temp_configs) - 1)])
             for item in temp_configs:
                 f.write(item)
                 f.write("\n")
+
+        # base64
+        # with open(config_temp_path, "w", encoding="utf-8-sig") as f:
+        #     txt = ""
+        #     for i, item in enumerate(temp_configs):
+        #         if i == len(temp_configs) - 1:
+        #             txt += item
+        #         else:
+        #             txt += item + "\n"
+        #     b64 = encode_str_to_base64(txt)
+        #     f.write(b64)
+
         
         # run_command
         if is_windows:
@@ -688,25 +759,19 @@ def ping_all_configs():
         process = subprocess.Popen(["sh", PING_TEST_PATH], stdout=subprocess.PIPE)
         process.wait()
         pid = process.pid
-        
-        if batch_run == 0:
-            if CHUNK_SIZE < len(all_configs):
-                batch_run = ceil(len(all_configs)/CHUNK_SIZE)
-                max_run = batch_run * 2
-            else:
-                batch_run = 1
-                max_run = 2
-        
+                
         # wait for output.json file exists and process ends
         while not os.path.isfile(JOSN_OUTPUT_PATH):
             print(f'waiting for ping test to comaplete, run: {counter} of {batch_run}\telapsed_time: {int((time.time() - start_total)/60)} min')
-            time.sleep(10)
+            time.sleep(5)
             if time.time() - start_chuck_time > CHUNK_TIMEOUT:
                 break
-            if is_speedtest_ended(SPEEDTEST_LOG_PATH):
+            if error_in_speedtest(SPEEDTEST_LOG_PATH):
                 break
-            # if process.poll() is not None:
-            #     break
+            if is_speedtest_ended(SPEEDTEST_LOG_PATH):
+                time.sleep(7)
+                break
+            time.sleep(5)
             
         # terminate process after completion
         if is_windows:
@@ -715,14 +780,19 @@ def ping_all_configs():
         else:
             subprocess.call(f"sudo pkill -f {exec_file}", shell=True)
                 
-        # extract ping nun zero
+        # extract pings
         if os.path.isfile(JOSN_OUTPUT_PATH):
             counter += 1
             with open(JOSN_OUTPUT_PATH, encoding="utf-8") as f:
                 js = json.load(f)
+            if duplicated_config_for_test:
+                js = unique_json_output(js)
             output_servers = []
             for item in js["nodes"]:
-                out = f"{unquote(item['link']).strip()},{int(item['ping'])}"
+                conf = unquote(item['link']).replace("_", " ").strip()
+                ping = int(item['ping'])
+                all_ping_results[conf]["Ping"][-1] = ping
+                out = f"{conf},{ping}"
                 output_servers.append(out)
                 # if item["ping"] != "0":
                 #     out = {"Config": unquote(item["link"]).strip(), "Ping": int(item["ping"])}
@@ -736,42 +806,61 @@ def ping_all_configs():
                         f.write("\n")
         else:
             if is_speedtest_ended(SPEEDTEST_LOG_PATH):
+                counter += 1
+                continue
+            if error_in_speedtest(SPEEDTEST_LOG_PATH):
+                print("Error in running ping test !!!!")
+                for conf in temp_configs:
+                    conf = conf.replace("_", " ")
+                    all_ping_results[conf]["DateTime"].pop(-1)
+                    all_ping_results[conf]["Ping"].pop(-1)
+                counter += 1
                 continue
             for item in temp_configs:
-                all_configs.append(item)
+                all_configs.append(item.replace("_", " "))
                     
         if _counter > max_run:
             break
         
         time.sleep(2)
     
-    # merge all results
-    results_jsonl = []
+    # merge all test configs
+    tested_configs_csv = []
     _files = os.listdir(temp_result_path)
     for _file in _files:
         _file_path = os.path.join(temp_result_path, _file)
         with open(_file_path, encoding="utf-8-sig") as f:
             _data = f.readlines()
         for _c in _data:
-            results_jsonl.append(_c.strip())
+            tested_configs_csv.append(_c.strip())
+    
+    
+    # exceed max run and all_configs is not empty
     if len(all_configs) > 0:
+        print(f"Maybe there is an error in testing configs, {len(all_configs)} configs left.")
         for item in all_configs:
-            out = f"{unquote(item).strip()},0"
-            results_jsonl.append(out)
-    raw_cofigs = []
-    if len(results_jsonl) > 0:
+            tested_configs_csv.append(f"{unquote(item).strip()},0")
+    
+    active_cofigs = []
+    if len(tested_configs_csv) > 0:
         with open(f"{result_path}/{NOW}.txt", "w", encoding="utf-8-sig") as f:
             f.write("Config,Ping")
             f.write("\n")
-            for item in results_jsonl:
+            for item in tested_configs_csv:
                 f.write(f"{item}")
                 f.write("\n")
+                conf = item.split(",")[0].strip()
+                ping = item.split(",")[0].strip()
+                
                 if item.split(",")[1] != "0":
-                    raw_cofigs.append(item.split(",")[0].strip())
+                    active_cofigs.append(conf)
         with open(f"{ACTIVE_CONFIGS_PATH}/all.txt", "w", encoding="utf-8-sig") as f:
-            for item in raw_cofigs:
+            for item in active_cofigs:
                 f.write(f"{item}")
                 f.write("\n")
+    
+    with open(f"{ACTIVE_CONFIGS_RESULT_PATH}/all.json", "w", encoding="utf-8-sig")  as f:
+        json.dump(all_ping_results, f, indent=4)
 
 def split_active_by_country():
     print("Split 'Active' configs based on Country ....")
@@ -860,6 +949,25 @@ def check_host():
     else:
         process_check_host_results(configs)
 
+# ---------------           Cipher      ------------------
+def cipher_split():
+    ciphers = {}
+    with open(f"{RAW_CONFIGS_PATH}/all.txt", "r", encoding="utf-8-sig") as f:
+        all_configs = f.readlines()
+    for conf in all_configs:
+        try:
+            print(conf.strip().replace("ss://","").split("@")[0])
+            body = decode_base64_to_str(conf.strip().replace("ss://","").split("@")[0] + "==")
+            cipher = body.split(":")[0]
+            print(f"cipher = {cipher}")
+            if ciphers.get(cipher):
+                ciphers[cipher] += 1
+            else:
+                ciphers[cipher] = 1
+        except:
+            print(conf)
+    return ciphers
+        
 
 if __name__ == "__main__":
     setup_env()
