@@ -974,6 +974,6 @@ if __name__ == "__main__":
     save_all_configs()
     merge_all_configs()
     split_raw_by_country()
-    ping_all_configs()
-    split_active_by_country()
+    # ping_all_configs()
+    # split_active_by_country()
     # check_host_country("AM")
