@@ -234,6 +234,16 @@
             "url": [
                 "https://raw.githubusercontent.com/Proxydaemitelegram/Proxydaemi44/refs/heads/main/Proxydaemi44"
         ]
+        },
+        {
+            "name": "vpnmarket",
+            "type": "mixed",
+            "url": [
+                "https://raw.githubusercontent.com/vpnmarket/sub/refs/heads/main/hiddify",
+                "https://raw.githubusercontent.com/vpnmarket/sub/main/hiddify1.txt",
+                "https://raw.githubusercontent.com/vpnmarket/sub/main/hiddify2.txt",
+                "https://raw.githubusercontent.com/vpnmarket/sub/main/hiddify3.txt"
+        ]
         }
     ]
 }
