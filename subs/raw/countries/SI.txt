@@ -1,7 +1,7 @@
-﻿ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQUFhiOEoyY2lEeWJva1dsN2t4S2Fi@free2.okkserver.tech:51587#🇸🇮 SI None
-ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@192.71.244.150:989#🇸🇮 SI Ljubljana
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjVWI3cVpkVlJteGo1TjJJWUlibGlp@free1.okkserver.tech:5612#🇸🇮 SI None
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjVWI3cVpkVlJteGo1TjJJWUlibGlp@45.144.55.215:5612#🇸🇮 SI None
-ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@192.71.244.150:989#🇸🇮 SI Ljubljana
-ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@91.132.94.200:989#🇸🇮 SI None
+﻿ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@192.71.244.150:989#🇸🇮 SI Ljubljana
 ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@91.132.94.200:989#🇸🇮 SI None
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQUFhiOEoyY2lEeWJva1dsN2t4S2Fi@free2.okkserver.tech:51587#🇸🇮 SI None
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjVWI3cVpkVlJteGo1TjJJWUlibGlp@45.144.55.215:5612#🇸🇮 SI None
+ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@91.132.94.200:989#🇸🇮 SI None
+ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@192.71.244.150:989#🇸🇮 SI Ljubljana
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjVWI3cVpkVlJteGo1TjJJWUlibGlp@free1.okkserver.tech:5612#🇸🇮 SI None
