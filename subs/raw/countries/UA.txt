@@ -1,8 +1,8 @@
 ﻿ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@176.103.53.105:989#🇺🇦 UA Kyiv
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@147.78.3.93:990#🇺🇦 UA None
 ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@176.103.53.105:989#🇺🇦 UA Kyiv
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzaHdvZ2hSaWE=@195.28.182.217:51348#🇺🇦 UA Kyiv
 ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@5.188.6.8:989#🇺🇦 UA Kyiv
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzaHdvZ2hSaWE@195.28.182.217:51348#🇺🇦 UA Kyiv
 ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@5.188.6.8:989#🇺🇦 UA Kyiv
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@147.78.3.93:990#🇺🇦 UA None
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1ZmZLM3ZjRzdxa0Q0dUFxV0NGbVdKY3dhOENLYncwRzBVWk9wbjV0azR0NjZReWw@193.0.61.96:51348#🇺🇦 UA None
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzaHdvZ2hSaWE=@195.28.182.217:51348#🇺🇦 UA Kyiv
